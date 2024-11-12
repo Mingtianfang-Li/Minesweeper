@@ -1,67 +1,23 @@
-# Node modules
-node_modules/
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Dependency directories
+# dependencies
+/node_modules
 /.pnp
 .pnp.js
 
-# Editor directories and files
-.idea/
-.vscode/
-*.sublime-workspace
+# testing
+/coverage
 
-# Build directory
-build/
+# production
+/build
 
-# MacOS files
+# misc
 .DS_Store
-
-# Environment variables
-.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-# Coverage directory
-coverage/
-
-# Optional npm cache directory
-.npm
-
-# Lint and prettier files
-.eslintcache
-.prettierignore
-.prettier
-
-# Parcel cache
-.cache/
-
-# Next.js
-.next/
-
-# Gatsby files
-.cache/
-public/
-
-# TypeScript files
-*.tsbuildinfo
-
-# Ignore lock files
-package-lock.json
-yarn.lock
-
-# SASS cache
-.sass-cache/
-
-# JetBrains files
-*.iml
-
-# Temporary files
-*.swp
-
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
