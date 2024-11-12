@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
+
 import Grid from './Grid';
-import GameStatus from './GameStatus'; // Import GameStatus component
+import GameStatus from './GameStatus';
 import '../css/Game.css';
 
+
 function Game({ rows, cols, mines }) {
+    const title = `Minesweeper - ${rows}x${cols} with ${mines} Mines`;
     const [gameStatus, setGameStatus] = useState('notStarted');
     const [flaggedCells, setFlaggedCells] = useState(0);
 
@@ -28,6 +32,9 @@ function Game({ rows, cols, mines }) {
 
     return (
         <div className="game-container">
+            <Helmet>
+                <title>{title}</title>
+            </Helmet>
             <h1>Minesweeper</h1>
             {gameStatus === 'notStarted' && (
                 <button onClick={startGame}>Start Game</button>
