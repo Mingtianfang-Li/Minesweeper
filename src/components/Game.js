@@ -56,7 +56,7 @@ function Game({ rows, cols, mines }) {
             <GameStatus
                 remainingMines={remainingMines}
                 gameStatus={gameStatus}
-                onRestart={restartGame} // Pass the restart handler
+                onRestart={restartGame}
             />
         </div>
     );
